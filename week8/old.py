@@ -1,4 +1,5 @@
 import numpy as np
+from numpy.core.fromnumeric import argmax
 
 
 class HMM:
@@ -77,4 +78,4 @@ class HMM:
             max_index = table_2[int(max_index), int(seq_length)]
             seq_length -= 1
         
-        return hidden_state_sequence[::-1]
+        return hidden_state_sequence
